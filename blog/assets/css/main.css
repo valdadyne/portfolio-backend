@@ -187,11 +187,22 @@ body {
 .page-wrapper .content-area .home .older-posts .posts-list .post-link {
   grid-column: span 1;
   grid-row: span 1;
-  padding: 5px;
-  box-shadow: var(--shadow);
+  padding: 10px;
+  background: var(--whiteColor);
+  box-shadow: 0 6px 8px -4px var(--darkColor);
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 10px;
+}
+
+.page-wrapper
+  .content-area
+  .home
+  .older-posts
+  .posts-list
+  .post-link
+  .post-image {
+  box-shadow: 0 2px 4px -2px var(--darkColor);
 }
 
 .page-wrapper
