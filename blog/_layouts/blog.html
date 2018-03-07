@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RGitau's Blog</title>
+    <link rel="stylesheet" href={{ "/assets/css/main.css" | relative_url}}>
+    <link rel="stylesheet" href={{ "/assets/css/blog.css" | relative_url}}>
+</head>
+
+<body>
+    <div class="blog-wrapper">
+
+        <nav>
+            <a class="brand" href="/">
+                <img src={{ "/assets/images/logo.png" | relative_url}} class="logo-hover">
+            </a>
+        </nav>
+        <header>
+            <div class="blog-heading">
+                <h4 class="blog-title">{{ page.title }}</h4>
+                <cite class="blog-desc">{{ page.description}}</cite>
+            </div>
+        </header>
+        <img src={{ page.image | relative_url }} alt="Blog Image" class="blog-img">
+        <main>
+            <div class="blog-date">
+                <p>{{ page.date | date: "%m/%d/%Y"}}</p>
+                <p></p>
+            </div>
+            <div class="blog-content">
+                {{ content }}
+            </div>
+        </main>
+
+
+    </div>
+</body>
+
+</html>
