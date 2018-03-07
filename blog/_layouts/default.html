@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RGitau's Blog</title>
-
-    <style>
-        body {
-            background: blue;
-        }
-    </style>
+    <link rel="stylesheet" href={{ "/assets/css/main.css" | relative_url}}>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
 <body>
-    {{ content }}
+    <div class="page-wrapper">
+        <header>
+
+            <img src={{ "/assets/images/logo.png" | relative_url}} class="logo">
+
+            <div class="title-area">
+                <span class="title">Rodgers M Gitau</span>
+                <span class="subtitle">| Tech Blog &amp; random musings</span>
+            </div>
+
+        </header>
+
+        <div class="content-area">
+            {{ content }}
+        </div>
+
+        <footer>
+            <div>
+                <span>RGitau &copy; 2018</span>
+            </div>
+            <div></div>
+
+        </footer>
+
+    </div>
+
 </body>
 
 </html>
