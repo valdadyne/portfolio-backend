@@ -12,9 +12,12 @@
 
 <body>
     <div class="page-wrapper">
+
         <header>
 
-            <img src={{ "/assets/images/logo.png" | relative_url}} class="logo">
+            <a class="brand" href="/">
+                <img src={{ "/assets/images/logo.png" | relative_url}} class="logo">
+            </a>
 
             <div class="title-area">
                 <!-- <span class="title">Rodgers M Gitau</span> -->
@@ -23,13 +26,13 @@
 
         </header>
 
-        <div class="content-area">
+        <main class="content-area">
             {{ content }}
-        </div>
+        </main>
 
         <footer>
             <div>
-                <span>RGitau &copy; 2018</span>
+                <span>Valdadyne &copy; 2018</span>
             </div>
             <div class="social">
                 <a target="_blank" href="https://github.com/valdadyne">
