@@ -1,0 +1,40 @@
+--- 
+layout: default 
+---
+
+<section class="home">
+
+    <div class="recent-post">
+        <h3>Recent</h3>
+        {% for post in site.posts limit:1 %}
+        <div class="recent-post-content">
+            <img class="recent-post-image" src="{{ post.image | relative_url }}">
+            <div class="recent-post-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>{{ post.date | date: "%m/%d/%Y"}}</span>
+            </div>            
+            <div class="recent-post-info">
+                <h4 class="recent-post-title">{{ post.title }}</h4> 
+                <a class="btn" href="{{ post.url | relative_url }}"> Read Post</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="older-posts">
+        <h3>Archive</h3>
+        <ul class="posts-list">
+            {% for post in site.posts %}
+            <li class="post-link">              
+          	  <img class="post-image" src="{{ post.image | relative_url }}">
+              <div class="post-info">
+                  <strong>{{ post.date | date: "%m/%d/%Y"}}</strong>
+                  <p>{{ post.title }}</span>
+                  <a class="btn" href="{{ post.url | relative_url }}"> Read Post</a>
+              </div>   
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</section>
