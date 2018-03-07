@@ -23,6 +23,15 @@
 .blog-wrapper nav .brand {
   height: 62px;
   width: 50px;
+  margin-right: 3rem;
+}
+
+.blog-wrapper nav .subtitle {
+  font-family: var(--titleFont);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--darkColor);
 }
 
 .blog-wrapper header {
