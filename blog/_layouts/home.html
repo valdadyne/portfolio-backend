@@ -24,7 +24,7 @@ layout: default
     <div class="older-posts">
         <h3>Others</h3>
         <ul class="posts-list">
-            {% for post in site.posts %}
+            {% for post in site.posts offset:1 %}
             <li class="post-link">
                 <img class="post-image" src="{{ post.image | relative_url }}">
                 <div class="post-info">
