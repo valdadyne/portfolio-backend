@@ -1,5 +1,5 @@
 ---
-title: Moonshot Studio
+title: 'Moonshot Studio : A case study into Freelancing'
 description: A freelance innovation collective a.k.a how to crowdsource awesomeness.
 image : '/assets/images/blog-posts/moonshot.png'
 layout: blog
