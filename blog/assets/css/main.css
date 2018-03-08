@@ -173,6 +173,8 @@ body {
   display: grid;
   grid-template-rows: 0.03fr 1fr;
   grid-gap: 20px;
+  padding-right: 2em;
+  overflow-y: scroll;
 }
 
 .page-wrapper .content-area .home .older-posts .posts-list {
@@ -181,7 +183,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 20vh;
   grid-gap: 20px;
-  overflow-y: scroll;
 }
 
 .page-wrapper .content-area .home .older-posts .posts-list .post-link {
