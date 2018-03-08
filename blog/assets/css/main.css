@@ -5,7 +5,7 @@
 :root {
   /* colors */
 
-  --baseColor: #e684c3;
+  --baseColor: #ff6a59;
   --focusColor: #5299ff;
   --darkColor: #2f2f2f;
   --whiteColor: #f0f0f0;
@@ -141,9 +141,10 @@ body {
   top: 10px;
   width: 80px;
   height: 80px;
-  background: var(--baseColor);
+  background: #fff;
+  border: 2px solid var(--baseColor);
   border-radius: 100%;
-  color: var(--darkColor);
+  color: var(--baseColor);
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
@@ -279,9 +280,10 @@ body {
   top: 5px;
   width: 60px;
   height: 60px;
-  background: var(--baseColor);
+  background: #fff;
+  border: 2px solid var(--baseColor);
   border-radius: 100%;
-  color: var(--darkColor);
+  color: var(--baseColor);
   font-size: 0.6rem;
   font-weight: bolder;
   display: flex;

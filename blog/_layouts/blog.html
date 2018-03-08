@@ -22,16 +22,15 @@
         <header>
             <div class="blog-heading">
                 <h4 class="blog-title">{{ page.title }}</h4>
-                <cite class="blog-desc">{{ page.description}}</cite>
+                <q class="blog-desc">{{ page.description}}</q>
             </div>
         </header>
         <img src={{ page.image | relative_url }} alt="Blog Image" class="blog-img">
         <main>
-            <div class="blog-date">
-                <p>{{ page.date | date: "%m/%d/%Y"}}</p>
-                <p></p>
+            <div class="blog-info-top">
+                <p class="blog-date">{{ page.date | date: "%m/%d/%Y"}}</p>
             </div>
-            <div class="blog-content">
+            <div class="blog-info-main">
                 {{ content }}
             </div>
         </main>
