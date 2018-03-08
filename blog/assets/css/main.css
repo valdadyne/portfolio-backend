@@ -141,10 +141,9 @@ body {
   top: 10px;
   width: 80px;
   height: 80px;
-  background: #fff;
-  border: 2px solid var(--baseColor);
+  background: var(--baseColor);
   border-radius: 100%;
-  color: var(--baseColor);
+  color: #fff;
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
@@ -280,10 +279,9 @@ body {
   top: 5px;
   width: 60px;
   height: 60px;
-  background: #fff;
-  border: 2px solid var(--baseColor);
+  background: var(--baseColor);
   border-radius: 100%;
-  color: var(--baseColor);
+  color: #fff;
   font-size: 0.6rem;
   font-weight: bolder;
   display: flex;
