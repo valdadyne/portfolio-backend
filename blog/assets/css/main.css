@@ -18,6 +18,7 @@
   /* shadow */
   --shadow: 0 10px 6px -6px rgba(58, 53, 55, 0.4);
   --reverse: 0 -10px 6px -6px rgba(58, 53, 55, 0.4);
+  --boxed: 0 6px 8px -4px var(--darkColor);
 }
 
 * {
@@ -47,6 +48,8 @@ body {
 
 .page-wrapper {
   position: relative;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .page-wrapper header {
@@ -86,16 +89,15 @@ body {
 
 .page-wrapper .content-area {
   margin: 20px;
-  min-height: 67vh;
+  height: 70vh;
 }
 
 /* Homepage */
 .page-wrapper .content-area .home {
-  height: inherit;
+  height: 60vh;
   padding: 20px 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 60vh;
   grid-gap: 40px;
 }
 
@@ -114,8 +116,9 @@ body {
 }
 .page-wrapper .content-area .home .recent-post .recent-post-content {
   position: relative;
+  padding: 1px;
   background: var(--whiteColor);
-  box-shadow: var(--shadow);
+  box-shadow: var(--boxed);
 }
 .page-wrapper
   .content-area
@@ -136,7 +139,27 @@ body {
   position: absolute;
   left: 10px;
   top: 10px;
-  color: var(--whiteColor);
+  width: 80px;
+  height: 80px;
+  background: var(--baseColor);
+  border-radius: 100%;
+  color: var(--darkColor);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.page-wrapper
+  .content-area
+  .home
+  .recent-post
+  .recent-post-content
+  .recent-post-date
+  strong {
+  padding: 10px;
 }
 
 .page-wrapper
@@ -147,13 +170,25 @@ body {
   .recent-post-info {
   height: 10vh;
   padding: 10px;
-  color: var(--whiteColor);
-  background: var(--darkColor);
+  color: var(--darkColor);
+  background: var(--whiteColor);
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
+
+.page-wrapper
+  .content-area
+  .home
+  .recent-post
+  .recent-post-content
+  .recent-post-info
+  .recent-post-title {
+  width: 70%;
+  line-height: 1.5;
+}
+
 .page-wrapper
   .content-area
   .home
@@ -164,11 +199,12 @@ body {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  background: var(--whiteColor);
-  color: var(--darkColor);
+  background: var(--darkColor);
+  color: var(--whiteColor);
 }
 
 .page-wrapper .content-area .home .older-posts {
+  position: relative;
   grid-column: 2 / span 2;
   display: grid;
   grid-template-rows: 0.03fr 1fr;
@@ -178,6 +214,7 @@ body {
 }
 
 .page-wrapper .content-area .home .older-posts .posts-list {
+  position: relative;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -186,11 +223,12 @@ body {
 }
 
 .page-wrapper .content-area .home .older-posts .posts-list .post-link {
+  position: relative;
   grid-column: span 1;
   grid-row: span 1;
   padding: 10px;
   background: var(--whiteColor);
-  box-shadow: 0 6px 8px -4px var(--darkColor);
+  box-shadow: var(--boxed);
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 10px;
@@ -214,6 +252,56 @@ body {
   .post-link
   .post-info {
   position: relative;
+  padding-top: 10px;
+}
+
+.page-wrapper
+  .content-area
+  .home
+  .older-posts
+  .posts-list
+  .post-link
+  .post-info
+  .post-title {
+  width: 60%;
+  line-height: 1.5;
+}
+
+.page-wrapper
+  .content-area
+  .home
+  .older-posts
+  .posts-list
+  .post-link
+  .post-date {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 60px;
+  height: 60px;
+  background: var(--baseColor);
+  border-radius: 100%;
+  color: var(--darkColor);
+  font-size: 0.6rem;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: space-around;
+  z-index: 5;
+}
+
+.page-wrapper
+  .content-area
+  .home
+  .older-posts
+  .posts-list
+  .post-link
+  .post-date
+  strong {
+  padding: 10px;
 }
 
 .page-wrapper
