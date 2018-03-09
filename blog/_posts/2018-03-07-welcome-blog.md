@@ -1,5 +1,5 @@
 ---
-title: Welcome To My Awesome Blog
+title: Welcome To My New Awesome Blog
 description: Konnichiwa, Hello, Bonjour, Jambo & Other Salutations. 
 image : '/assets/images/blog-posts/hello.png'
 layout: blog
