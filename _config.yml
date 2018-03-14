@@ -1,2 +1,4 @@
 name : Rodgers Gitau Blog
 url: valdadyne.github.io
+markdown: kramdown
+permalink: pretty
