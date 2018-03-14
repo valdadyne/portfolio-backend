@@ -441,6 +441,15 @@ body {
   }
 }
 
+/* Tablets */
+/* @media (min-width: 750px) and (max-width: 1500) {
+  .page-wrapper {
+    height: auto;
+  }
+  .page-wrapper .content-area {
+    min-height: 100vh;
+  }
+} */
 /* ----------- */
 
 /* Fallback Feature Queries */
